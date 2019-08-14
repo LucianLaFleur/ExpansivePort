@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clickable pictures</title>
+  <link rel="stylesheet" type="text/css" href="ren1.css" media="screen" />
+</head>
+<body>
+    <header class="nav_link_header">
+      <a href="landing.html"> To landing </a> |
+      <a href="clickable_pics.html.erb"> To clickable pics </a> |
+      <a href="mwo.html.erb"> To MWO example</a> |
+    </header>
+  <br>
+
+  <div class="button_try">
+    <h2>Button practice: </h2>
+      <button type="button" onclick="alert('Polo!')"> Marco! </button>
+
+    <hr>
+          <p> Let's try something for comparison:
+          </p>
+
+      <div class="margin_image_demo">
+        <p style="">
+          <b>Margins</b> reduced by 30px on right and bottom
+            <br>
+          You can click on the following image to open an alert:
+        </p>
+          <img src="../assets/images/pleases_nut.jpg" height="200px" width="100%"
+        onclick="alert('The nut is pleased')">
+        </img>
+      </div>
+
+    <br>
+
+      <div class="padding_image_demo">
+        <p>
+          <b> Padding </b> reduced by 30px on right and bottom
+            <br>
+          You can click on the following image to open an alert
+          now stretched by text, which <b>stretches</b> the div:
+        </p>
+          <img src="../assets/images/pleases_nut.jpg" height="200px" width="100%"
+        onclick="alert('still a nutjob...')">
+        </img>
+      </div>
+
+    <br>
+
+      <div class="alert_div" onclick="alert('whole green area is nutty')">
+        <p>
+          Now the entire div is clickable (anywhere green here)
+        </p>
+          <img src="../assets/images/pleases_nut.jpg" width="50%"
+          margin="auto">
+        </img>
+        <p>
+          display changed to "block", at 50% window width, <br>
+          and the pic is half the width of the div. <br>
+          So it auto-adjusts to window size, instead of <br>
+          The inline block only adjusting when the window is too small.<br>
+          as you can see above and below, "inline-blocks" adjust
+          element-size <br>
+          according to the length [width] of text contents <br>
+          so be careful of referencing the width of the window or <br>
+          the width of the <i>contents</i> of the <b>element</b>
+          <br> ... <br>
+          On the upside, now the length of text doesn't stretch the element
+          and excess text gets auto-wrapped back into the element by default
+          so it doesn't violate padding and such for the block.
+        </p>
+      </div>
+
+    <hr>
+
+      <button type="button" onclick="alert('The nut is pleased')">
+        Image used in a button is unconventional, but possible <br>
+        and this text is bunched up on the same line as an img element
+        <img src="../assets/images/pleases_nut.jpg" height="200px">
+      </button>
+    <hr>
+      <button type="button" onclick="alert('The nut is still quite pleased')">
+        Use a break-tag to get the image off the same line as text <br>
+        and it'll auto-center by default on the btn <br>
+        <img src="../assets/images/pleases_nut.jpg" height="200px">
+      </button>
+    </div>
+</body>
+</html>

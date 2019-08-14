@@ -1,0 +1,21 @@
+
+.mwo_body {
+  background-color: #9bc;
+}
+
+.body_header {
+  color: white;
+  background-color: black;
+  padding-left: 10px;
+}
+
+.mw_article_header {
+  color: #ff5;
+  background-color: #376;
+  border-top: 5px dashed gold;
+  border-bottom: 5px dashed gold;
+  border-right: 5px dashed gold;
+  display:block;
+  width:600px;
+  padding: 3px;
+}
