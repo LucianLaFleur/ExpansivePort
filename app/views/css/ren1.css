@@ -1,0 +1,646 @@
+
+@import url('https://fonts.googleapis.com/css?family=Yesteryear&display=swap');
+
+/* imported from https://fonts.google.com */
+
+.overall_page_body {
+  background-color: #9f6;
+}
+
+.title_banner {
+  text-align: center;
+  color: gold;
+  background-color: #725;
+  border-bottom: 15px solid black;
+  border-left: 15px solid black;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.nav_link_header {
+  color: white;
+  background-color: #ccc;
+  padding: 5px 0;
+}
+
+.quest {
+  /* placeholder for questions in html page*/
+}
+
+.tool_navbar2 {
+  background:#725;
+  color:gold;
+  font-size: 2rem;
+  font-family: verdana;
+  text-align: center;
+  height: 100px;
+  box-shadow: 2px -18px 48px 9px rgba(228,10,155,0.74);
+}
+
+.tool_belt_set {
+  font-size: 1rem;
+  margin-top: -30px;
+}
+
+.tool_belt_link {
+  color:#89e;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.element_ordo {
+  text-align:center;
+  font-family: "Lucidia Console", monospace;
+}
+.block1 {
+  background: blue;
+  color:white;
+  width:50vw;
+  margin: 20px auto;
+}
+/* ^^ margin centers block elements like the
+text-align quality for inline elements */
+.inline1 {
+  background: red;
+  color:white;
+  text-decoration: none;
+}
+#top_stripe {
+  color:#f7c547;
+  background:#2b3d41;
+}
+#mid_stripe {
+color:#f7c547;
+background:#1c638c;
+}
+#bottom_stripe {
+  color:#37b;
+  background:#d7a547;
+  font-weight: bold;
+}
+
+.kanji_clicker {
+  width:50vw;
+  height: 50vh;
+  background-color: white;
+}
+
+.kan_list {
+  float:left;
+}
+
+
+
+.kan_item {
+  background: blue;
+  height:50px;
+  padding:30px;
+  outline: 3px solid gold;
+  outline-offset: -8px;
+}
+.kan_item:hover{
+  background-color:#7ad;
+  cursor: pointer;
+}
+
+.term_info {
+  max-width:25vw;
+  max-height:40vh;
+  display: inline-block;
+}
+
+#vis_img {
+  float: right;
+  display: block;
+  height: 300px;
+}
+
+.hint_button {
+  width:30vw;
+  height:12vh;
+  display: inline-block;
+  text-align: center;
+  color:#113;
+  background:#b2b2b2;
+}
+
+.nest1 {
+  text-align: center;
+  padding: 0 25px;
+  background-color: #9ab;
+  height:250px;
+  width:250px;
+}
+.nest2 {
+  padding: 0 25px;
+  background-color: #233;
+  height:200px;
+  width:200px;
+}
+.nest3 {
+  padding:0 25px;
+  background-color:#eac;
+  height:150px;
+  width:150px;
+}
+.nest4 {
+  padding: 0 25px;
+  background-color:#ff7;
+  height:100px;
+  width:100px;
+}
+.nest5 {
+  background-color:#113;
+  height:50px;
+  width:100px;
+}
+#nest_line1 {
+  color:#ff7;
+  font-size: 25px;
+  font-weight: bold;
+}
+#nest_line2 {
+  color:#567;
+  font-size: 25px;
+  font-weight: bold;
+}
+#nest_line3 {
+  color:#233;
+  font-size: 25px;
+  font-weight: bold;
+}
+#nest_line4 {
+  color:#eac;
+  font-size: 25px;
+  font-weight: bold;
+}
+#nest_line5 {
+  color:#233;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.b_nest1 {
+  text-align: center;
+  background-color: #adf;
+  height:250px;
+  width:250px;
+}
+.b_nest2 {
+  background-color: #404;
+  height:200px;
+  width:200px;
+}
+.b_nest3 {
+  background-color:#112;
+  height:150px;
+  width:150px;
+}
+.b_nest4 {
+  background-color:#135;
+  height:100px;
+  width:100px;
+}
+.b_nest5 {
+  background-color:#725;
+  height:50px;
+  width:50px;
+}
+#b_nest_line1 {
+  color:#ee5;
+  font-size:20px ;
+  font-weight:bold;
+}
+#b_nest_line2 {
+  color:#adf;
+  font-size:20px ;
+  font-weight:bold;
+}
+#b_nest_line3 {
+  color:#7ea;
+  font-size:20px ;
+  font-weight:bold;
+}
+#b_nest_line4 {
+  color:#e5b;
+  font-size:20px ;
+  font-weight:bold;
+}
+#b_nest_line5 {
+  color:#112;
+  font-size:20px ;
+  font-weight:bold;
+}
+
+.banner_pract_drop {
+  background-color:#eec;
+  font-family: 'Yesteryear', cursive;
+  width: 80vw;
+  height: 10vh;
+}
+
+.ul_practice_element {
+  border: 3px solid black;
+  background-color: aliceblue;
+  display: inline-block;
+  margin: 5px;
+  padding: 0px 15px 0 15px;
+}
+
+.text_try {
+  border-style: inset;
+  border-width: 5px 15px;
+  background-color:#dadada;
+  display: inline-block;
+  padding: 0px 10px;
+  /* 0 padding top/bot and 10 padding L/R */
+}
+/*dropdown and form selection practice*/
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  margin-left: 120px;
+  border: 3px solid black;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #71a;
+  margin-left: 140px;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: gold;
+  font-size: 15;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+
+.form_practice {
+  background-color: #9c9c9c;
+  display:block;
+  margin: auto;
+}
+
+
+.sent1 {
+  line-height:50px;
+  background: red;
+  padding: 10px 30px;
+}
+
+.sent2 {
+  letter-spacing: 2px;
+  background: blue;
+  color: gold;
+  padding: 0 15px;
+  border: 3px solid black;
+  margin: 40px 10px;
+}
+
+.sent3 {
+  word-spacing: 33px;
+}
+
+.sent4 {
+  text-transform: uppercase;
+}
+
+.banner2{
+  background:#404;
+  color:gold;
+  text-indent: 40px;
+  font-size: 20px;
+  font-family: 'Yesteryear', cursive;
+  width: 80vw;
+  min-height: 45vh;
+}
+
+#banner2_preamble {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#s1 {
+  font-family:monospace;
+  font-weight: bold;
+}
+
+#s2 {
+  font-family:helvetica;
+  font-weight: lighter;
+  font-style: oblique;
+}
+
+#s2_2 {
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* caution line and mouseover area*/
+.caution_line_collection {
+  border: 15px dashed yellow;
+  background-color: black;
+  display: inline-block;
+  margin: 10px 0px 10px 10px;
+}
+
+.greying_buffer {
+  padding: 10px 10px 10px 10px;
+  background-color: #666;
+}
+
+.mouse_over_test1 {
+  color: red;
+  border: 5px solid red;
+  background-color: #222;
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.mouse_over_test2 {
+  color: black;
+  border: 5px solid blue;
+  background-color: aliceblue;
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.mouse_over_test3 {
+  color: white;
+  border: 5px solid orange;
+  background-color: #71a;
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+/* mechwarrior mwo acronyms articles and divisions*/
+.mwo_body {
+  background-color: #9bc;
+}
+
+.body_header {
+  color: white;
+  background-color: black;
+  padding-left: 10px;
+}
+
+.acro_quick_ref {
+  background-color:#c1c1c1;
+  width:80%;
+  padding-bottom: 14px;
+}
+
+.mwo_link_button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+  .mwo_link_button:visited {
+    background-color: purple;
+  }
+  .mwo_link_button:hover {
+    background-color: yellow;
+  }
+
+.spelled_acronym{
+  font-size: 20px;
+  width:50%;
+  border: 3px dotted blue;
+}
+
+.underlined {
+  color:#279;
+  text-decoration: underline;
+  font-size:30px;
+}
+
+.mwo_article_header {
+  color: #ff5;
+  background-color: #376;
+  border-top: 5px dashed gold;
+  border-bottom: 5px dashed gold;
+  border-right: 5px dashed gold;
+  display:block;
+  width:600px;
+  padding: 3px;
+}
+
+.mwo_content {
+  padding-left:20px;
+  background-color: #c1c1c1;
+  padding: 10px 20px;
+  width:500px;
+}
+
+/*landing */
+.landing_page_body {
+  background:#956;
+}
+
+#landing_header {
+  border: 5px solid #425;
+  color:#dfd;
+  background-color: black;
+  display:block;
+  padding:10px;
+  margin: auto;
+  width:50%;
+  text-align: center;
+}
+
+.paragraphs {
+border: 5px solid black;
+border-radius: 4px;
+width: 300px;
+height: 440px;
+color:#fcd;
+background:#425;
+padding-left: 10px;
+}
+.para1 {
+  float:both;
+  font-size: 20px;
+  width: 110px;
+  height: 235px;
+  color:#dfd;
+  background:black;
+  padding-left: 10px;
+}
+.inner_paragraph {
+  text-align: center;
+  border: 10px solid gold;
+  border-radius: 50%;
+}
+
+.btn_set1 {
+  background-color:#b9c;
+  margin: 30px 0px;
+  padding: 5px;
+  width: 80vw;
+}
+
+.btn_type1 {
+  background: #dfd;
+  color:purple;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0 10px;
+  border: 5px solid black;
+  padding: 20px;
+}
+.btn_type1:hover {
+  color:blue;
+  background: gold;
+}
+
+#spooky_btn {
+  background: #dfd;
+  color:#dfd;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0 10px;
+  border: 5px solid black;
+  padding: 20px;
+  /* cursor:pointer; */
+}
+#spooky_btn:hover {
+  color:blue;
+  background: gold;
+  cursor:not-allowed;
+}
+
+#blank_btn {
+  background: #dfd;
+  color:#dfd;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0 10px;
+  border: 5px solid black;
+  padding: 20px;
+}
+#blank_btn:hover {
+  color: gold;
+  background: gold;
+  border:1px solid red;
+  outline: 5px solid red;
+  outline-offset: -5px;
+  cursor:crosshair;
+}
+
+.btn_set2 {
+  background-color:#b9c;
+  margin: 30px 0;
+  padding: 5px;
+  width: 80vw;
+}
+
+.btn_type2 {
+  background: #dfd;
+  color:purple;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0 10px;
+  border: 5px solid black;
+  padding: 20px;
+}
+.btn_type2:hover {
+  color:blue;
+  background: gold;
+  border:1px solid red;
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+#pic_header {
+  color:#dfd;
+  background-color: #b9c;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  display: block;
+  margin: auto;
+}
+
+#pic_h_textline {
+  background-color: black;
+  text-decoration: underline;
+  display:inline-block;
+  padding: 20px 40px;
+  outline: 10px solid gold;
+  outline-offset: 10px;
+}
+
+#fall_sidewalk1 {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+#li_ex1 {
+  color:black;
+  background: rgba(25,86,95,0.3)
+}
+#li_ex2 {
+  color:#2d6;
+  background:black;
+}
+#li_ex3 {
+  color:#c46;
+  background:#533;
+}
+#li_ex4 {
+  color:white;
+  background:rgba(55, 55, 55, .20);
+}
+#li_ex5 {
+  color:white;
+  background:rgba(55, 55, 55, .55);
+}
+#li_ex6 {
+  color:white;
+  background:rgba(55, 55, 55, .80);
+}
+#li_ex7 {
+  color:white;
+  background:rgb(55, 55, 55);
+}
+
+#table_example1 {
+  background: blueviolet;
+  color: gold;
+  display: inline-block;
+  border: 3px solid black
+}
+
+#table_title {
+  font-size: 20pt;
+  font-weight: bold;
+  text-decoration: underline;
+}

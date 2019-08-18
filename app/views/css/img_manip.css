@@ -1,0 +1,40 @@
+/* multi-open */
+ .gallery {
+   margin: auto;
+   width: 80%;
+   display: block;
+ }
+
+ .gal_item {
+   margin: auto;
+   max-height: 300px;
+   max-width: 300px;
+ }
+
+/* clickable links styling */
+.button_try {
+  /* placeholder for button collection div*/
+}
+
+.margin_image_demo {
+  color:white;
+  background-color: #148814;
+  display: inline-block;
+  margin: 0px 0px 30px 0px;
+  /*padding: 0px 0px 30px 30px;*/
+}
+
+.padding_image_demo {
+  color:white;
+  background-color: #113;
+  display: inline-block;
+  padding: 0px 0px 30px 30px;
+}
+
+.alert_div {
+    color:white;
+    background-color: #148814;
+    display: block;
+    padding: 30px;
+    width:50%;
+  }

@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Clickable pictures</title>
-  <link rel="stylesheet" type="text/css" href="ren1.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../css/img_manip.css" media="screen" />
 </head>
 <body>
     <header class="nav_link_header">
-      <a href="landing.html"> To landing </a> |
+      <a href="landing.html.erb"> To landing </a> |
       <a href="clickable_pics.html.erb"> To clickable pics </a> |
       <a href="mwo.html.erb"> To MWO example</a> |
+      <a href="ren1.html.erb">To PRACTICE</a> |
     </header>
   <br>
 
@@ -25,11 +26,11 @@
 
       <div class="margin_image_demo">
         <p style="">
-          <b>Margins</b> reduced by 30px on right and bottom
+          <b>Margins</b> reduced by 30px on bottom
             <br>
           You can click on the following image to open an alert:
         </p>
-          <img src="../assets/images/pleases_nut.jpg" height="200px" width="100%"
+          <img src="../../assets/images/pleases_nut.jpg" height="200px" width="100%"
         onclick="alert('The nut is pleased')">
         </img>
       </div>
@@ -43,7 +44,7 @@
           You can click on the following image to open an alert
           now stretched by text, which <b>stretches</b> the div:
         </p>
-          <img src="../assets/images/pleases_nut.jpg" height="200px" width="100%"
+          <img src="../../assets/images/pleases_nut.jpg" height="200px" width="100%"
         onclick="alert('still a nutjob...')">
         </img>
       </div>
@@ -54,7 +55,7 @@
         <p>
           Now the entire div is clickable (anywhere green here)
         </p>
-          <img src="../assets/images/pleases_nut.jpg" width="50%"
+          <img src="../../assets/images/pleases_nut.jpg" width="50%"
           margin="auto">
         </img>
         <p>
@@ -79,13 +80,13 @@
       <button type="button" onclick="alert('The nut is pleased')">
         Image used in a button is unconventional, but possible <br>
         and this text is bunched up on the same line as an img element
-        <img src="../assets/images/pleases_nut.jpg" height="200px">
+        <img src="../../assets/images/pleases_nut.jpg" height="200px">
       </button>
     <hr>
       <button type="button" onclick="alert('The nut is still quite pleased')">
         Use a break-tag to get the image off the same line as text <br>
         and it'll auto-center by default on the btn <br>
-        <img src="../assets/images/pleases_nut.jpg" height="200px">
+        <img src="../../assets/images/pleases_nut.jpg" height="200px">
       </button>
     </div>
 </body>
