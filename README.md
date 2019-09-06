@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+||||||| merged common ancestors
+=======
+# ExpansivePort
+A collection of CSS and JS portfolio projects
+>>>>>>> 158bf3c46a56742ad020b6e8bc228fafd2ab7c5d
