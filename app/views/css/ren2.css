@@ -1,0 +1,562 @@
+.overall_page_body {
+  background-color: #145;
+}
+
+.title_banner {
+  text-align: center;
+  color: gold;
+  background-color: #725;
+  border-bottom: 15px solid black;
+  border-left: 15px solid black;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.nav_link_header {
+  text-align: center;
+  background-color: #e7c547;
+  padding: 5px 0;
+  margin-top: -22px;
+}
+
+.tool_navbar2 {
+  background:#725;
+  color:#e7a577;
+  font-size: 2rem;
+  font-family: verdana;
+  text-align: center;
+  height: 120px;
+  box-shadow: 2px -18px 48px 9px rgba(228,10,155,0.74);
+}
+
+.tool_belt_set {
+  font-size: 1rem;
+  margin-top: -30px;
+  display: flex;
+  justify-content: center;
+}
+
+.tool_belt_link {
+  color:#89e;
+  font-size: 1rem;
+  flex-basis:100px;
+  text-decoration: none;
+}
+
+.plain_header {
+  border-top: 3px solid black;
+  border-bottom: 3px dotted #cf5;
+  background:#725;
+  color:gold;
+  text-align:center;
+  padding:10px 2%;
+  width: 60vw;
+  margin: 10px 16%;
+  word-wrap: normal;
+}
+
+/* custom aud bar modded from Anki projects*/
+.aud_bar_container {
+  display:flex;
+  background:#149;
+  width: 60vw;
+  border-left:40px solid #fc5;
+	border-right:40px solid #fc5;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: center;
+}
+.aud_bar_outer {
+  display:flex;
+  background: #224;
+  border-left:40px solid #ccc;
+	border-right:40px solid #ccc;
+  border-radius:54%;
+  width:40vw;
+	justify-content: center;
+}
+.aud_bar_inner {
+	background:#459;
+	display:flex;
+	border-left:14px solid #db6;
+	border-right:14px solid #db6;
+	border-radius:39%;
+}
+.aud_button_core {
+  font-size:25px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius:34%;
+  height: 30px;
+  background-color: #9df;
+  padding: 8px 10px 10px 10px;
+}
+.aud_button_core:hover {
+  color: blue;
+  background-color: #cef;
+  border: 3px solid #224;
+  border-radius:34%;
+  font-size:25px;
+  text-align: center;
+;
+ height: 30px;
+ padding: 8px 10px 10px 10px;
+}
+
+.inception_box {
+  border: 3px solid gold;
+  height:70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer_inception_nest {
+  border: 8px solid orange;
+  display: flex;
+  position: relative;
+}
+.outer_inception_nest:hover {
+  border-color: #aaa;
+}
+.outer_inception_nest::before {
+  content:"";
+  border: 8px solid purple;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -35%;
+  left: -35%;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+.outer_inception_nest:hover::before {
+  bottom:-8px;
+  left:-8px;
+}
+.outer_inception_nest::after {
+  content:"";
+  border: 8px solid green;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -35%;
+  right: -35%;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+.outer_inception_nest:hover::after{
+  top:-8px;
+  right:-8px;
+}
+.innermost_inception_nest {
+  border: 8px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.innermost_inception_nest::before {
+  content:"";
+  border: 8px solid #c47;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+.innermost_inception_nest:hover::before {
+  top: 0;
+  left: 0;
+}
+.innermost_inception_nest::after {
+  content:"";
+  border: 8px solid #47c;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -30%;
+  right: -30%;
+  z-index: -1;
+  transition: all 0.5s linear;
+}
+.innermost_inception_nest:hover::after {
+  bottom: 0;
+  right: 0;
+}
+
+#hypercube {
+  height: 20vh;
+  border: 8px solid black;
+  display: block;
+}
+
+/* unfinished for later */
+#shoot{
+  background: blue;
+  color: aliceblue;
+}
+#shoot:hover{
+  background: #ccc;
+}
+.archery_range {
+  margin: 10px;
+  width: 800px;
+  height: 70vh;
+  border: 5px solid gold;
+  position:relative;
+  overflow: hidden;
+}
+#archery_arrow {
+width:150px;
+position: absolute;
+/* start at bottom left corner */
+bottom: 0;
+left: 0;
+z-index: 0;
+/* 680 x axis, -267 y axis, shrunken arrow
+reaches small-target apple when scaled down to .3 */
+transform: translate(680px, -267px) scale(0.3, 0.3);
+/* NOTE: multiple transforms are deliniated by (parentheses),
+no commas needed, only the line-ending semicolon-tan;  */
+}
+#archery_apple {
+  height:25px;
+  position: absolute;
+  top:25%;
+  right:0%;
+}
+
+/* l8r rotate around X axis, rotateX(360deg) to make the arrow spin
+as it flies, on flat, this shrinks top and bottom,
+rotate Y shrinks left-right because it's spinning around the Notrth-
+south axis. rotate Z, or just rotate by default, spins it around the pole
+coming at you out of the screen; the Z axis, so images won't grow or shrinks
+at all */
+
+.spoiler_practice {
+  background: linear-gradient(red, blue);
+  text-align: center;
+  width: 70%;
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#spoiler_content::before{
+  content: "I'm a line of content made from within CSS";
+  color:white;
+}
+#spoiler_content {
+  display: none;
+  text-align: left;
+  padding: 0 40px;
+}
+#spoil_button {
+  height:35px;
+  width: 85px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.z_axis_set{
+  margin: 20px;
+  width: 70vw;
+  height: 70vh;
+  border: 5px solid gold;
+  position:relative;
+  overflow: hidden;
+}
+.z_axis_set img {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+.z1 {
+  top: 0;
+  left: 0;
+  transition: transform 2s;
+}
+.z1:hover {
+  height: 400px;
+  width:400px;
+  transform:rotate(360deg);
+  z-index: 2;
+}
+.z2 {
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+  transition: /*width 1s, height 1s,*/ transform 2s;
+}
+/* changing top and left percentages to do a manual translate */
+.z2:hover {
+  top: 25%;
+  left: 15%;
+  height:220px;
+  width: 450px;
+  transform: rotate(-180deg);
+}
+.z3 {
+  top: 20%;
+  left: 40%;
+  transition: height 1s, width 1s, transform 1s;
+}
+.z3:hover {
+  width: 400px;
+  z-index: 2;
+  transform: rotate(90deg);
+}
+
+.tutorial_opaque001 {
+  background:url("../../assets/images/sample1/cozy1.jpg")
+  center/cover fixed no-repeat;
+
+  /* background-position: center;
+  background-size:cover;
+  !!! don't get the above two backwards or the image won't show !!!
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+.banner001 {
+  color: #fe5;
+}
+.opaque001 {
+  color: #ccc;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.imgs_set {
+}
+.imgs_set div {
+  color:orange;
+  height:350px;
+}
+
+.big_img {
+  background-image:url("../../assets/images/sample1/cozy1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.opaque2 {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.6);
+}
+.small_img {
+  text-align: center;
+  background-image:url("../../assets/images/kan/nine_kan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#cozy1 {
+  height:250px;
+}
+
+.gradients > div {
+  width: 160px;
+  height: 160px;
+}
+.gradient1 {
+  float:left;
+  background: linear-gradient(blue, yellow);
+  height:150px;
+  width:23%;
+}
+.gradient2 {
+  float: left;
+  background: linear-gradient(to top, blue, white, red);
+  height:150px;
+  width:23%;
+}
+.gradient3 {
+  float: left;
+  background: linear-gradient(90deg, black, #fc4, #f55);
+  height:150px;
+  width:23%;
+}
+.gradient4 {
+  float: left;
+  background-image: radial-gradient(red, white, blue);
+  height:150px;
+  width:23%;
+}
+.gradient5 {
+  background: linear-gradient(to bottom right, #42a, #fc5);
+  color: #4e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  clear: left;
+}
+.gradient6 {
+  color: white;
+}
+
+.weapon_list {
+  border: 5px dashed #da9;
+  color:aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weapon_list div {
+  border: 5px solid white;
+  padding: 5px;
+}
+.spear {
+  flex:2;
+  background: #835;
+}
+
+.compass {
+  border: 5pt solid black;
+  background: #514;
+  display:flex;
+  height: 40vh;
+  align-items: center;
+}
+.compass div {
+  background: #aaa;
+  outline: 5pt solid #fc5;
+  text-align: center;
+  flex:1;
+}
+.west {
+  margin-left: 5px;
+}
+.north {
+  align-self: flex-start;
+}
+.south {
+  align-self: flex-end;
+}
+.east {
+  margin-right: 5px;
+}
+
+.wrap1 {
+  color:gold;
+  border: 5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrap1 div {
+  width:350px;
+}
+.flex_nest1 {
+  border: 5px solid blue;
+  /* HERE the spacing override cause is below! */
+  /* margin-right: auto; */
+}
+.flex_nest2 {
+  border: 5px solid green;
+  justify-content: space-between;
+}
+.flex_nest3 {
+  border: 5px solid purple;
+}
+
+.flex2 {
+  border: 5px dashed yellow;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.flex2 div {
+  background: #258;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+
+}
+.flex_nest21 {
+  border: 5px solid blue;
+}
+.flex_nest22 {
+  border: 5px solid green;
+}
+.flex_nest23 {
+  border: 5px solid purple;
+}
+
+
+.spacing_lists div {
+  background: #635;
+}
+
+.ex_list0 {
+  border: 5px dotted #da9;
+  color:aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  /* below, justify content differs in these elements */
+  justify-content: space-around;
+  margin-top:30px;
+}
+.ex_list0 p {
+  border: 5px solid #8da;
+  padding:5px;
+}
+.ex_list1 {
+  border: 5px dotted #da9;
+  color:aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  /* justify reminde, here's the difference in the example */
+  justify-content: space-between;
+  margin-top:30px;
+}
+.ex_list1 p {
+  border: 5px solid #8da;
+  padding:5px;
+}
+.ex_list2 {
+  border: 5px dotted #da9;
+  color:aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  /* justify reminde, below's the difference in the example */
+  justify-content: space-evenly;
+  margin-top:30px;
+}
+.ex_list2 p {
+  border: 5px solid #8da;
+  padding:5px;
+}
+
+.links1 {
+  border: 5px solid gold;
+  background: #aaa;
+  height:30vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.links1 a {
+  background: black;
+  color: #8e7;
+  text-decoration: none;
+  margin: 0 10px;
+}

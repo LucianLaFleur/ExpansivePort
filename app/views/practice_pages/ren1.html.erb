@@ -21,6 +21,7 @@
     <a href="clickable_pics.html.erb"> To clickable pics </a> |
     <a href="mwo.html.erb"> To MWO example</a> |
     <a href="ren1.html.erb">To PRACTICE</a> |
+    <a href="ren2.html.erb">To V2 practice</a> |
   </header>
 <br>
 
@@ -47,79 +48,88 @@
   </div>
 <br>
 
-<div class="element_ordo">
-  <div id="top_stripe" class="block1">font in "Lucidia Console", monospace
-  </div>
-  <h1 id="mid_stripe" class="block1">mustard:f7c547, Jindigo:2b3d41,
-    metalsea:1c638c </h1>
-  <p id="bottom_stripe" class="block1">Note tone variants for readability here</p>
-  <span class="inline1">Inline element 1</span
-  <a class="inline1" href="#">Inline link</a>
-  <img class="inline1" src="../../assets/images/kan/i_armor.jpg" alt="armor midriff"
+<div class="trip_menu_header">
+  <img id="kendo_helmet" src="../../assets/images/kan/shell_helmet.png" alt="armor midriff"
   height="200px">
+    <div class="element_ordo">
+      <div id="top_stripe" class="block1">font in "Lucidia Console", monospace
+      </div>
+      <h1 id="mid_stripe" class="block1">mustard:f7c547, Jindigo:2b3d41,
+        metalsea:1c638c </h1>
+      <p id="bottom_stripe" class="block1">Scheme colors changed for readability</p>
+    </div>
+  <div class="emo_item_set">
+    <p class="emo_item">happy</p>
+    <p class="emo_item">sad</p>
+    <p class="emo_item">shocked</p>
+    <p class="emo_item">angry</p>
+  </div>
 </div>
 
-<br>
-<div class="js_play1">
-  <button type="button"
-  onclick="display_time()">
-  Click me to display Date and Time.</button>
-  <p id="disp">(Script will be displayed here)</p>
-<hr>
-  <p id="text1">Change text with buttons.</p>
-
-  <button type="button" onclick='text_change()'>Click to change text!</button>
-</div>
-<br>
-
-<div class="kanji_clicker">
-  <!-- Quest: Make a pic area to the side that
-changes when you make a different selection -->
-  <!-- <img src="../../assets/images/kan/begin_kan.jpg" alt="moto"> </img>
-  <img src="../../assets/images/kan/begin_legs.jpg" alt="display image"
-  id="visualized_image"> -->
-
+<div class="caution_line_collection">
+  <div style="padding:15px;">
+    <div class="kanji_clicker">
       <div class="kan_list">
           <img class="kan_item" id="moto1"
           src="../../assets/images/kan/begin_kan.png" alt="moto"
-          onclick="visualize_moto1()"
+          onclick="translate_moto1()"
           ></img>
-          <p>^click^</p>
-            <dl>
-              <dt>Eng. Meaning</dt>
-              <dd>Reading 1</dd>
-              <dd>Reading 2</dd>
-              <dd>example</dd>
-            </dl>
-        <!-- <img class="kan_item" id="centurion"
-        src="../../assets/images/kan/centurion_kan.png" alt="">
-          <br>
-        <img class="kan_item" id="stomach1"
-        src="../../assets/images/kan/stomach_kan.png" alt=""> -->
-  <!-- visualized image below -->
+          <p id="kan_answer_concealer">^click to reveal^</p>
+          <p id="kan_ex1"></p>
+          <p id="kan_vis_explained"></p>
       </div>
+        <div class="kan_list">
+            <img class="kan_item" id="moto1"
+            src="../../assets/images/kan/begin_kan.png" alt="moto"
+            onclick="visualize_moto1()"
+            ></img>
+            <p>^click^</p>
+              <dl>
+                <dt>Eng. Meaning</dt>
+                <dd>Reading 1</dd>
+                <dd>Reading 2</dd>
+                <dd>example</dd>
+              </dl>
+        </div>
       <img id="vis_img"
       src="../../assets/images/pleases_nut.jpg" alt="image visualized here">
-
+      <p id="kan_story"> - lorem ipsum dolor set</p>
+    </div>
+  </div>
 </div>
 
 <br>
-  <div class="hint_button">
-    <p>What do these
-      <span style="color:#afa;font-size:20px;text-decoration:underline;"
-      onclick="alert('[c]olor[num] [b]ackground[num]')">
-      codes
-      </span>
-      mean?
-      <br>
-      click the odd word above for a hint.
-    </p>
+  <div class="dropup">
+    <button class="dropbtn" style="position:relative; display:inline-block;">
+    Drop "up" selection
+    </button>
+    <div class="dropup-content">
+      <a href="#">Jump to top of page</a>
+      <a href="../../assets/images/pleases_nut.jpg" target="_blank">Deez Nuts (new window)</a>
+      <a href="">placeholders 1</a>
+      <a href="">placeholders 2</a>
+      <a href="">placeholders 3</a>
+      <a href="">placeholders 4</a>
+      <a href="">(staggered thru margins)</a>
+    </div>
   </div>
-
-
-
+<hr>
+<div class="caution_line_collection">
+  <div class="greying_buffer">
+    <div class="hint_button">
+      <p>What do these
+        <span style="color:#afa;font-size:20px;text-decoration:underline;"
+        onclick="alert('[c]olor[num] [b]ackground[num]')">
+        codes
+        </span>
+        mean?
+        <br>
+        click the odd word above for a hint.
+      </p>
+    </div>
+  </div>
+</div>
 <br>
-
 <div class="nest1">
   <div class="nest2">
     <div class="nest3">
@@ -151,23 +161,6 @@ changes when you make a different selection -->
   </div>
   <p id="b_nest_line5">c112badf</p>
 </div>
-
-<br>
-  <div class="banner_pract_drop">
-    <p>What a beautiful day to learn something new, don't you agree?</p>
-    <div class="dropdown_select">
-      <!-- Quest: Make a pic area to the side that
-    changes when you make a different selection -->
-      <select name="mech_dropdown" id="mech_dropdown">
-        <option value="KCR" onclick="alert('Snip-snip!')">King Crab</option>
-        <option value="PRH" onclick="alert('Late-game pew-pew!')">Pirannah</option>
-        <option value="HBK">Hunchback</option>
-        <option value="QKD">Quickdraw</option>
-        <option value="LCS">Locust</option>
-      </select>
-    </div>
-  </div>
-
 <br>
 <div class="caution_line_collection">
   <div class="greying_buffer">
@@ -181,6 +174,32 @@ changes when you make a different selection -->
         </ul>
     </div>
   </div>
+</div>
+<br>
+<div class="banner_pract_drop">
+  <p>Mech dropdown list, items can get event listners</p>
+  <div class="dropdown_select">
+    <!-- Quest: Make a pic area to the side that
+  changes when you make a different selection -->
+    <select name="mech_dropdown" id="mech_dropdown">
+      <option value="KCR" onclick="alert('Snip-snip!')">King Crab</option>
+      <option value="PRH" onclick="alert('Late-game pew-pew!')">Pirannah</option>
+      <option value="HBK">Hunchback</option>
+      <option value="QKD">Quickdraw</option>
+      <option value="LCS">Locust</option>
+    </select>
+  </div>
+</div>
+
+<div class="js_play1">
+  <button type="button"
+  onclick="display_time()">
+  Click me to display Date and Time.</button>
+  <p id="disp">(Script will be displayed here)</p>
+<hr>
+  <p id="text1">Change text with buttons.</p>
+
+  <button type="button" onclick='text_change()'>Click to change text!</button>
 </div>
 <br>
 
@@ -215,27 +234,29 @@ changes when you make a different selection -->
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen></iframe> -->
 
-  <img class="" src="../assets/images/sample1/forest_1.jpg"
+  <img class="" src="../../assets/images/sample1/forest_1.jpg"
   alt="a forest picture" height="200px"></img>
 </div>
 
 <!-- all names need to match with radio buttons
 so only 1 can be chosen-->
-<h2>/// Form input practice ///</h2>
-<p>How many donughts do you eat on national donught day?</p>
-  <input type="radio" name="group1" value="item1">
-    1
-  </input>
-  <input type="radio" name="group1" value="item2">
-    2
-  </input>
-  <input type="radio" name="group1" value="item3">
-    3
-  </input>
-  <input type="radio" name="group1" value="item4">
-    What? There's a national donught day?
-  </input>
-  <br>
+<div class="radio_pract">
+  <h2>/// Form input practice ///</h2>
+  <p>How many donughts do you eat on national donught day?</p>
+    <input type="radio" name="group1" value="item1">
+      1
+    </input>
+    <input type="radio" name="group1" value="item2">
+      2
+    </input>
+    <input type="radio" name="group1" value="item3">
+      3
+    </input>
+    <input type="radio" name="group1" value="item4">
+      What? There's a national donught day?
+    </input>
+  </div>
+<br>
 <input type="submit" name="group1" value="Vote!"></input>
 <hr>
   <form class="" action="index.html" method="post">
@@ -260,28 +281,6 @@ so only 1 can be chosen-->
     <!-- close entire survey block, incluing title and BG-->
     </div>
   </form>
-
-  <form class="" action="index.html" method="post">
-    <select name="mech_selection" id="">
-      <option value="none">none</option>
-      <option value="KCR">King Crab</option>
-      <option value="CMD">Commando III</option>
-      <option value="HBK">Hunchback</option>
-      <option value="QKD">Quickdraw</option>
-      <option value="LCS">Locust</option>
-    </select>
-  </form>
-
-<div class="dropup">
-  <button class="dropbtn" style="position:relative; display:inline-block;">
-  Drop "up" selection
-  </button>
-  <div class="dropup-content">
-    <a href="#">Jump to top of page</a>
-    <a href="../../assets/images/pleases_nut.jpg" target="_blank">Deez Nuts (new window)</a>
-    <a href="">(staggered thru margins)</a>
-  </div>
-</div>
 
 <hr>
 
